@@ -221,89 +221,87 @@
 
 		<!-- QOUTE SHIPMENT SECTION -->
 		<section id="q_ship" class="bg_secondary x_padding">
-			<div class="">
-				<div class="column_text">
-					<div class="write_up">
-						<div><h3 class="bold">Get a Qoute</h3></div>
-						<div><p>Get a quick quote on your package. It’s totally free.We reply typically in 3 hours.</p></div>
-					</div>
+			<div class="column_text">
+				<div class="write_up">
+					<div><h3 class="bold">Get a Qoute</h3></div>
+					<div><p>Get a quick quote on your package. It’s totally free.We reply typically in 3 hours.</p></div>
 				</div>
-				<div id="q_ship_form" class="box_shadow box_radius">
-					<h3>Get a Qoute</h3>
-					<form id="q_ship_form" onsubmit=''>
+			</div>
+			<div id="q_ship_form" class="box_shadow box_radius">
+				<h3>Get a Qoute</h3>
+				<form id="q_ship_form" onsubmit=''>
 
-						<fieldset id="freight_type">
-							<select name="freight_type">
-								<option value="freight_type" selected>Freight Type</option>
-							</select>
-						</fieldset>
+					<fieldset id="freight_type">
+						<select name="freight_type">
+							<option value="freight_type" selected>Freight Type</option>
+						</select>
+					</fieldset>
 
-						<fieldset id="shipping_region" class="radio_group">
-							<li>
-								<input type="radio" name="location" id="state">
-								<label for="state">Interstate</label>
-							</li>
-							<li>
-								<input type="radio" name="location" id="oversea">
-								<label for="oversea">Overseas</label>
-							</li>
-						</fieldset>
+					<fieldset id="shipping_region" class="radio_group">
+						<li>
+							<input type="radio" name="location" id="state">
+							<label for="state">Interstate</label>
+						</li>
+						<li>
+							<input type="radio" name="location" id="oversea">
+							<label for="oversea">Overseas</label>
+						</li>
+					</fieldset>
 
-						<fieldset id="shipping_locations">
-							<!-- TODO: Get country list for input element -->
-							<input type="text" name="from_country" placeholder="Turkey">
-							<img src="./public/images/arrow_green.png" height="20px" width="20px">
-							<input type="text" name="to_country" placeholder="Nigeria">
-						</fieldset>
+					<fieldset id="shipping_locations">
+						<!-- TODO: Get country list for input element -->
+						<input type="text" name="from_country" placeholder="Turkey">
+						<img src="./public/images/arrow_green.png" height="20px" width="20px">
+						<input type="text" name="to_country" placeholder="Nigeria">
+					</fieldset>
 
-						<fieldset id="package_type">
-							<select name="package_weight">
-								<option value="weight" selected> Weight (kg) </option>
-							</select>
-							<select name="package_size">
-								<option value="size_range" selected>Size Range</option>
-							</select>
-						</fieldset>
+					<fieldset id="package_type">
+						<select name="package_weight">
+							<option value="weight" selected> Weight (kg) </option>
+						</select>
+						<select name="package_size">
+							<option value="size_range" selected>Size Range</option>
+						</select>
+					</fieldset>
 
-						<fieldset id="package_state" class="radio_group">
-							<legend>Is this package fragile?</legend>
-							<li>
-								<input type="radio" name="package_state" id="fragile_true">
-								<label for="fragile_true">Yes</label>
-							</li>
-							<li>
-								<input type="radio" name="package_state" id="fragile_false">
-								<label for="fragile_false">No</label>
-							</li>
-						</fieldset>
+					<fieldset id="package_state" class="radio_group">
+						<legend>Is this package fragile?</legend>
+						<li>
+							<input type="radio" name="package_state" id="fragile_true">
+							<label for="fragile_true">Yes</label>
+						</li>
+						<li>
+							<input type="radio" name="package_state" id="fragile_false">
+							<label for="fragile_false">No</label>
+						</li>
+					</fieldset>
 
-						<fieldset id="service_type" class="radio_group">
-							<legend>Service Type</legend>
-							<li>
-								<input type="radio" name="s_type" id="s_type_normal">
-								<label for="s_type_normal">Normal</label>
-							</li>
-							<li>
-								<input type="radio" name="s_type" id="s_type_express">
-								<label for="s_type_express">Express</label>
-							</li>
-							<li>
-								<input type="radio" name="s_type" id="s_type_recurring">
-								<label for="s_type_recurring">Recurring</label>
-							</li>
-						</fieldset>
+					<fieldset id="service_type" class="radio_group">
+						<legend>Service Type</legend>
+						<li>
+							<input type="radio" name="s_type" id="s_type_normal">
+							<label for="s_type_normal">Normal</label>
+						</li>
+						<li>
+							<input type="radio" name="s_type" id="s_type_express">
+							<label for="s_type_express">Express</label>
+						</li>
+						<li>
+							<input type="radio" name="s_type" id="s_type_recurring">
+							<label for="s_type_recurring">Recurring</label>
+						</li>
+					</fieldset>
 
-						<fieldset id="contact_details">
-							<input type="text" name="fullname" placeholder="Full Name">
-							<input type="email" name="email" placeholder="Email Address">
-						</fieldset>
+					<fieldset id="contact_details">
+						<input type="text" name="fullname" placeholder="Full Name">
+						<input type="email" name="email" placeholder="Email Address">
+					</fieldset>
 
-						<fieldset id="submit">
-							<button class="call_to_action box_radius" onclick={function() {console.log(jaja)}}>Request Qoute</button>
-						</fieldset>
+					<fieldset id="submit">
+						<button class="call_to_action box_radius" onclick={function() {console.log(jaja)}}>Request Qoute</button>
+					</fieldset>
 
-					</form>
-				</div>
+				</form>
 			</div>
 		</section>
 
