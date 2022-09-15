@@ -67,6 +67,9 @@
 }
 
 @media screen and (max-width: 750px) {
+	#hero {
+		padding-right: var(--padding_left) !important;
+	}
 	.hero_text {
 		margin-top: 49px;
     display: flex;
@@ -166,12 +169,31 @@
 	}
 }
 
+@media screen and (max-width: 490px) {
+	#track_form form {
+		flex-direction: column;
+		padding: 40px 10px;
+		width: 100%;
+	}
+	#track_form form input {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	#post_row .post_cta {
+		width: 100%;
+		text-align: center;
+	}
+}
+
 @media screen and (max-width: 458px) {
 	:root {
 		--padding_left: 14px;
 	}
 	#q_ship_form {
 		width: 100%;
+	}
+	#contact {
+		padding-right: var(--padding_left) !important;
 	}
 	#contact > div {
 		width: 100%;
