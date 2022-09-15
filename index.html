@@ -77,7 +77,7 @@
 			</div>
 			<div id="track_form">
 				<form>
-					<input type="text" name="tracking_no" placeholder="Enter Tracking Number" class="box_radius" />
+					<input type="text" name="tracking_no" placeholder="Enter Tracking Number" class="box_radius" required="" />
 					<button class="call_to_action box_radius" >Track</button>
 				</form>
 			</div>
@@ -250,9 +250,9 @@
 
 					<fieldset id="shipping_locations">
 						<!-- TODO: Get country list for input element -->
-						<input type="text" name="from_country" placeholder="Turkey">
+						<input type="text" name="from_country" placeholder="Turkey" required="">
 						<img src="./public/images/arrow_green.png" height="20px" width="20px">
-						<input type="text" name="to_country" placeholder="Nigeria">
+						<input type="text" name="to_country" placeholder="Nigeria" required="">
 					</fieldset>
 
 					<fieldset id="package_type">
@@ -293,8 +293,8 @@
 					</fieldset>
 
 					<fieldset id="contact_details">
-						<input type="text" name="fullname" placeholder="Full Name">
-						<input type="email" name="email" placeholder="Email Address">
+						<input type="text" name="fullname" placeholder="Full Name" placeholder="">
+						<input type="email" name="email" placeholder="Email Address" placeholder="">
 					</fieldset>
 
 					<fieldset id="submit">
@@ -329,15 +329,15 @@
 					<fieldset>
 						<li>
 							<label for="contact_name">Name</label>
-							<input type="text" name="contact_name" id="contact_name" placeholder="Full Name">
+							<input type="text" name="contact_name" id="contact_name" placeholder="Full Name" placeholder="">
 						</li>
 						<li>
 							<label for="contact_email">Email</label>
-							<input type="text" name="contact_email" id="contact_email" placeholder="Email Address">
+							<input type="text" name="contact_email" id="contact_email" placeholder="Email Address" placeholder="">
 						</li>
 						<li>
 							<label for="contact_msg">Message</label>
-							<textarea id="contact_msg" placeholder="Write your message"></textarea>
+							<textarea id="contact_msg" placeholder="Write your message" readonly=""></textarea>
 						</li>
 					</fieldset>
 					<fieldset>
@@ -377,7 +377,7 @@
 				<p>Stay updated  with the latest news, updates, discounts and more with Amat.</p>
 			</div>
 			<form id="n_form" class="box_radius">
-				<input type="email" name="" placeholder="Email Address">
+				<input type="email" name="" placeholder="Email Address" readonly="">
 				<button class="box_radius">Subscribe</button>
 			</form>
 		</section>
