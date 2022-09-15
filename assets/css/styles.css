@@ -111,7 +111,6 @@ input, textarea {
 	width: 50%;
 }
 .write_up h3 {
-	font-size: 18px;
 	margin-bottom: 7px;
 }
 .bg_primary {
@@ -397,7 +396,7 @@ input, textarea {
 	flex-direction: column;
 	height: 100px;
 	padding: 8px 94px 29px 8px;
-	box-shadow: 0 0 3px 0px #0000001a;
+	box-shadow: var(--box_shadow);
 }
 #core_items > div p {
 	font-size: 12px;
