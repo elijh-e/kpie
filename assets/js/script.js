@@ -1,6 +1,6 @@
 (function() {
-	let fadeInRight = ['animate__animated', 'animate__fadeInRight']
-	let fadeInLeft = ['animate__animated', 'animate__fadeInLeft']
+	let fadeInRight = ['animate__animated', 'animate__slideInRight']
+	let fadeInLeft = ['animate__animated', 'animate__slideInLeft']
 
 	const elementsToObserve = document.querySelectorAll('#about_section, #backers, #services, #contact, #core, #tms, #apps')
 	window.addEventListener('DOMContentLoaded', (e) => {
@@ -9,7 +9,7 @@
 
 	function assignIntialProps() {
 		const observer = new IntersectionObserver(showElements,
-			{root: null, rootMargin: '0px', threshold: .2}
+			{root: null, rootMargin: '0px', threshold: .4}
 		)
 		Array.from(elementsToObserve).forEach(e => {
 			e.style.visibility = 'hidden'

@@ -478,7 +478,7 @@ input, textarea {
 	margin-right: 30px;
 }
 
-#q_ship > div {
+#q_ship {
 	display: flex;
 	padding: 25px 0;
 	justify-content: space-between;
@@ -754,6 +754,7 @@ input, textarea {
 #page_footer #bottom > div ul li {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	margin-right: 5px;
 }
 #page_footer #bottom > div ul li:not(li:last-of-type)::after {
