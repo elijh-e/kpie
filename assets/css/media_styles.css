@@ -183,6 +183,9 @@
 		width: 100%;
 		text-align: center;
 	}
+	.write_up {
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 458px) {

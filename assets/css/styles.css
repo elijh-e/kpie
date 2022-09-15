@@ -303,7 +303,7 @@ input, textarea {
 	display: flex;
 	flex-direction: column;
 	width: min-content;
-	box-shadow: 0 0 3px 0px #0000001a;
+	box-shadow: var(--box_shadow);
 }
 #post_row .post_single:not(.post_single:last-of-type) {
 	margin-right: 20px;
@@ -500,7 +500,7 @@ input, textarea {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
-	margin-bottom: 18px;
+	margin-bottom: 27px;
 	padding: 0 13px;
 }
 #q_ship_form > fieldset legend, #q_ship_form .radio_group label {
@@ -753,6 +753,7 @@ input, textarea {
 }
 #page_footer #bottom > div ul li {
 	display: flex;
+	align-items: center;
 	margin-right: 5px;
 }
 #page_footer #bottom > div ul li:not(li:last-of-type)::after {

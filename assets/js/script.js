@@ -1,5 +1,8 @@
 (function() {
-	const elementsToObserve = document.querySelectorAll('#about_section, #backers, #services, #core, #tms, #apps')
+	let fadeInRight = ['animate__animated', 'animate__fadeInRight']
+	let fadeInLeft = ['animate__animated', 'animate__fadeInLeft']
+
+	const elementsToObserve = document.querySelectorAll('#about_section, #backers, #services, #contact, #core, #tms, #apps')
 	window.addEventListener('DOMContentLoaded', (e) => {
 		window.IntersectionObserver !== undefined && assignIntialProps()
 	})
@@ -17,11 +20,23 @@
 	};
 	function showElements(arr) {
 		arr.forEach((observed, i) => {
-			console.log(observed.target.querySelector('div:first-child'))
+
 			if (observed.isIntersecting) {
 				observed.target.style.visibility = 'visible'
 				observed.target.style.opacity = '1'
-				assignClassnames(observed.target, ['animate__animated', 'animate__fadeInUp'])
+
+				switch (observed.target.id) {
+					case 'about_section':
+						assignClassnames(observed.target.querySelector('#about_text'), fadeInLeft)
+						assignClassnames(observed.target.querySelector('#img'), fadeInRight)
+					return
+					case 'contact':
+						assignClassnames(observed.target.querySelector('#form_wrap'), fadeInLeft)
+						assignClassnames(observed.target.querySelector('#conpany_contact'), fadeInRight)
+					return
+					default :
+						assignClassnames(observed.target, ['animate__animated', 'animate__fadeInUp'])
+				}
 			}
 		})
 	}
