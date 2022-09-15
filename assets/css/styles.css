@@ -13,6 +13,7 @@
 	--default-header-content-spacing-lg: 24px;
 	--transition: .2s ease all;
 	--padding_left: 150px;
+	--box_shadow: 0 0 3px 1px #00000021;
 }
 @font-face {
 	font-family: manropeLight;
@@ -304,6 +305,7 @@ input, textarea {
 	flex-direction: column;
 	width: min-content;
 	box-shadow: var(--box_shadow);
+	border-radius: 5px;
 }
 #post_row .post_single:not(.post_single:last-of-type) {
 	margin-right: 20px;
