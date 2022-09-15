@@ -12,7 +12,7 @@
 	--default-header-content-spacing-md: 20px;
 	--default-header-content-spacing-lg: 24px;
 	--transition: .2s ease all;
-	--padding_left: 150px;
+	--x_padding: 150px;
 	--box_shadow: 0 0 3px 1px #00000021;
 }
 @font-face {
@@ -73,7 +73,7 @@ input, textarea {
 	padding: 12px;
 }
 .x_padding {
-	padding: 0 var(--padding_left) ;
+	padding: 0 var(--x_padding) ;
 }
 .box_radius {
 	border-radius: var(--default-box_radius);
@@ -158,8 +158,8 @@ input, textarea {
 }
 #page > section {
 	margin-top: var(--default-section-margin_top);
-	padding-left: var(--padding_left);
-	padding-right: var(--padding_left);
+	padding-left: var(--x_padding);
+	padding-right: var(--x_padding);
 }
 #page_header {
 	display: flex;
@@ -422,7 +422,7 @@ input, textarea {
 #tms .left {
 	padding: 5% 0;
 	background-color: var(--amat-primary-color-faded);
-	padding-left: var(--padding_left)
+	padding-left: var(--x_padding)
 }
 #tms .right {
 	align-items: flex-start;
