@@ -394,7 +394,7 @@ input, textarea {
 #core_items > div {
 	display: flex;
 	flex-direction: column;
-	height: 100px;
+	/*height: 100px;*/
 	padding: 8px 94px 29px 8px;
 	box-shadow: var(--box_shadow);
 }
