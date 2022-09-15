@@ -317,8 +317,8 @@ input, textarea {
 	margin-bottom: 10px;
 }
 #post_row .post_single .post_img {
-	height: 165px;
-	width: 250px;
+	height: 159px;
+  width: 294px;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
