@@ -9,7 +9,7 @@
 
 	function assignIntialProps() {
 		const observer = new IntersectionObserver(showElements,
-			{root: null, rootMargin: '0px', threshold: .4}
+			{root: null, rootMargin: '0px', threshold: .2}
 		)
 		Array.from(elementsToObserve).forEach(e => {
 			e.style.visibility = 'hidden'
